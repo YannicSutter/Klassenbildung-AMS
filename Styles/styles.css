@@ -1,7 +1,25 @@
-.title {
-    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.subtitle {
+.title {
+    font-size: 3em;
+}
 
+.horizontal-center {
+    text-align: center;
+}
+
+.div-logo {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    max-width: 400px;
+    height: auto;
+    width: auto;
 }
