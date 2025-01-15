@@ -12,6 +12,14 @@ body {
     text-align: center;
 }
 
+.horizontal-center-flex {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .div-logo {
     position: relative;
     display: flex;
@@ -22,4 +30,12 @@ body {
     max-width: 400px;
     height: auto;
     width: auto;
+}
+
+.excel-logo {
+    max-width: 25%;
+}
+
+.button {
+    margin: 20px;
 }
