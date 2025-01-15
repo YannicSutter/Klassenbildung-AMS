@@ -12,6 +12,11 @@ body {
     text-align: center;
 }
 
+.horizontal-center-hidden {
+    text-align: center;
+    display: none;
+}
+
 .horizontal-center-flex {
     display: flex;
     text-align: center;

@@ -14,39 +14,39 @@
             <h1 class="title">Klassenbildung</h1>
             <p>Excel Datei als Input auswählen:</p>
             <input type="file" id="file-input" accept=".xlsx, .xls, .csv"><br>
-            <button class="button" onclick="">Berechnen</button>
+            <button class="button" onclick="Calculate()">Berechnen</button>
         </div>
-        <div class="horizontal-center">
+        <div id="Kantonsschulen" class="horizontal-center-hidden">
             <hr>
             <h2>Kantonsschulen</h2>
             <div class="horizontal-center-flex">
                 <div>
                     <p>Kantonsschule Heerbrugg</p>
                     <img src="Styles/Images/microsoft-excel.png" alt="Excel" class="excel-logo"><br>
-                    <button class="button" onclick="">Herunterladen</button>
+                    <button class="button" onclick="Download('KSH')">Herunterladen</button>
                 </div>
                 <div>
                     <p>Kantonsschule Sargans</p>
                     <img src="Styles/Images/microsoft-excel.png" alt="Excel" class="excel-logo"><br>
-                    <button class="button" onclick="">Herunterladen</button>
+                    <button class="button" onclick="Download('KSS')">Herunterladen</button>
                 </div>
                 <div>
                     <p>Kantonsschule Wattwil</p>
                     <img src="Styles/Images/microsoft-excel.png" alt="Excel" class="excel-logo"><br>
-                    <button class="button" onclick="">Herunterladen</button>
+                    <button class="button" onclick="Download('KSW')">Herunterladen</button>
                 </div>
                 <div>
                     <p>Kantonsschule Wil</p>
                     <img src="Styles/Images/microsoft-excel.png" alt="Excel" class="excel-logo"><br>
-                    <button class="button" onclick="">Herunterladen</button>
+                    <button class="button" onclick="Download('KSWil')">Herunterladen</button>
                 </div>
                 <div>
                     <p>Kantonsschule am Burggraben</p>
                     <img src="Styles/Images/microsoft-excel.png" alt="Excel" class="excel-logo"><br>
-                    <button class="button" onclick="">Herunterladen</button>
+                    <button class="button" onclick="Download('KSBG')">Herunterladen</button>
                 </div>
             </div>
-            <button class="button" onclick="">Alle herunterladen</button>
+            <button class="button" onclick="Download('All')">Alle herunterladen</button>
         </div>
     </body>
 </html>
