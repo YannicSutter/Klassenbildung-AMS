@@ -42,5 +42,9 @@ body {
 }
 
 .button {
-    margin: 20px;
+    margin: 15px;
+}
+
+.file-text {
+    font-style: italic;
 }

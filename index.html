@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/Styles/styles.css">
+        <link rel="stylesheet" href="Styles/styles.css">
         <script src="Scripts/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.2.1/exceljs.min.js"></script>
       </head>
     <body>
         <div class="div-logo">
@@ -13,7 +14,8 @@
         <div class="horizontal-center">
             <h1 class="title">Klassenbildung</h1>
             <p>Excel Datei als Input auswählen:</p>
-            <input type="file" id="file-input" accept=".xlsx, .xls, .csv"><br>
+            <button onclick="SelectInputFile()">Datei auswählen</button>
+            <p id="InputFileText" class="file-text"></p><br>
             <button class="button" onclick="Calculate()">Berechnen</button>
         </div>
         <div id="Kantonsschulen" class="horizontal-center-hidden">
@@ -34,6 +36,7 @@
                     <p>Kantonsschule Wattwil</p>
                     <img src="Styles/Images/microsoft-excel.png" alt="Excel" class="excel-logo"><br>
                     <button class="button" onclick="Download('KSW')">Herunterladen</button>
+                    <button class="button" onclick="Download('All')">Alle herunterladen</button>
                 </div>
                 <div>
                     <p>Kantonsschule Wil</p>
@@ -46,7 +49,7 @@
                     <button class="button" onclick="Download('KSBG')">Herunterladen</button>
                 </div>
             </div>
-            <button class="button" onclick="Download('All')">Alle herunterladen</button>
+            
         </div>
     </body>
 </html>
