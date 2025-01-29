@@ -25,6 +25,13 @@ body {
     margin-right: 100px;
 }
 
+.horizontal-center-flex > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
 .div-logo {
     position: relative;
     display: flex;

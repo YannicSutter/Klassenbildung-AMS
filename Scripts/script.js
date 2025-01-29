@@ -1,5 +1,5 @@
 let StudentsData = [];
-let StudentsDataSorted = [[]];
+let StudentsDataSorted = new Map();
 let InputFile;
 let FileKSH;
 let FileKSS;
@@ -33,7 +33,7 @@ async function ProcessStudents() {
     await ReadData();
     ShowKantonsschulen();
     console.log(StudentsData);
-
+    SortStudentsToFirstChoice();
 }
 
 async function ReadData() {
@@ -75,11 +75,19 @@ async function ReadData() {
 
 function ShowKantonsschulen() {
     let div = document.getElementById("Kantonsschulen");
-        div.style.display = "inline";
+    div.style.display = "inline";
 }
 
-function SortStudents() {
-    
+function SortStudentsToFirstChoice() {
+    for (i = 0; i < StudentsData.length; i++) {
+        const key = `${StudentsData[i].spf1}|${StudentsData[i].spf1sprache}|${StudentsData[i].vonschule}`;
+        if (!StudentsDataSorted.has(key)) {
+            StudentsDataSorted.set(key, [StudentsData[i]]);
+            continue;
+        }
+        StudentsDataSorted.get(key).push(StudentsData[i]);
+    }
+    console.log(StudentsDataSorted);
 }
 
 function Download(school) {
